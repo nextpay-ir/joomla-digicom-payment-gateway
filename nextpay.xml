@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="digicom_pay" method="upgrade">
+
+	<name>درگاه نکست پی - DigiCom</name>
+	<author>Nextpay</author>
+	<creationDate>29-02-2017</creationDate>
+	<copyright>Copyright © 2017 Nextpay.ir All rights reserved.</copyright>
+	<license>GNU/GPLv3</license>
+	<authorEmail>info@nextpay.ir</authorEmail>
+	<authorUrl>www.nextpay.ir</authorUrl>
+	<version>1.3.3</version>
+	<description>پلاگین پرداخت نکست پی برای دیجی کام</description>
+
+	<files>
+		<filename plugin="nextpay">nextpay.php</filename>
+		<folder>nextpay</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="fa-IR">fa-IR/fa-IR.plg_digicom_nextpay.ini</language>
+	</languages>
+
+ 	<config>
+
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field name="api_key" type="text" default="" label="کلید مجوزدهی API KEY" description=""/>
+
+				<field name="plugin_name" type="text" default="Nextpay" label="نام پلاگین(لاتین)" description="" />
+
+				<field name="plugin_hidname" type="hidden" default="nextpay" />
+
+			</fieldset>
+
+		</fields>
+
+	</config>
+
+</extension>
